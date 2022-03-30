@@ -1,0 +1,16 @@
+SELECT COUNT() FROM Contact
+SELECT COUNT(ID) FROM Contact
+SELECT COUNT(mailingCity) FROM Contact
+
+SELECT  id, name, phone
+FROM Account
+WHERE phone != null
+
+SELECT  id, name, phone
+FROM Account
+WHERE (phone != null or Website !=null) and AccountNumber != null
+
+SELECT  id, name, Subject__c, status__c, priority__c
+FROM Account
+WHERE (phone != null or Website !=null) and AccountNumber != null
+

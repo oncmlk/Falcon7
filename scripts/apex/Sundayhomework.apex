@@ -1,0 +1,16 @@
+List<String> corbalar = new List<String>();
+corbalar.add('Yogurt Corbasi');
+corbalar.add('Mercimek Corbasi');
+corbalar.add('Domates Corbasi');
+corbalar.add('Tarhana Corbasi');
+List<String> malzemeler = new List<String>();
+malzemeler.add('Yogurt,Un,Yumurta,Tuz,Yag');
+malzemeler.add('Mercimek,Salca,Sogan,Tuz,Yag');
+malzemeler.add('Domates,Sogan,Karabiber,Tuz,Yag');
+malzemeler.add('Tarhan,Kiyma,Tuz,Yag');
+map<string,string> sunum = new map<string,string>();
+sunum.put(corbalar[0], malzemeler[0]);
+sunum.put(corbalar[1], malzemeler[1]);
+sunum.put(corbalar[2], malzemeler[2]);
+sunum.put(corbalar[3], malzemeler[3]);
+system.debug(sunum);

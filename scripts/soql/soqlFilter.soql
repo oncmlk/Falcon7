@@ -1,0 +1,4 @@
+select id, name, mailingcity from contact where mailingCity ='Paris'
+select id, name, mailingcity from contact where Name like 'A%'
+select id, Name From Account order by Name DESC
+SELECT Name, Industry FROM Account where Industry = 'Energy' LIMIT 2

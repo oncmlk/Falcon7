@@ -1,0 +1,31 @@
+//Show the records for Account object, whose name does contains 'am' in the name field.
+// Prepare the list of records whose account number is not null
+//Retrieve the list of 10 contact records in the descending order of the date these records were created
+//Show the list of 10 records of opportunity object in the ascending order of the date these records were modified
+//Give the count of the records for the Opportunity object
+//Give the count of the records for the account object, whose name does contains 'am' 
+
+SELECT Name
+FROM Account
+WHERE Name like '%am%'
+
+SELECT  Name
+FROM Account
+WHERE AccountNumber !=null
+
+SELECT  Name
+FROM Contact 
+ORDER BY createddate DESC LIMIT 10
+
+SELECT  Name
+FROM Opportunity 
+ORDER BY lastmodifieddate ASC LIMIT 10
+
+SELECT COUNT()
+FROM  Opportunity
+
+SELECT COUNT(name)
+FROM  Account
+WHERE Name LIKE  '%am%'
+
+

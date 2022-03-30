@@ -1,0 +1,6 @@
+//child to parent
+//Just user "."(dot)
+//similar to formula fields
+
+select id, name, account.Name, account.indusrtry from contact where Account.indusrtry = 'energy'
+select id, name, subject__c from sales_ticket__c
